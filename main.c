@@ -6,12 +6,17 @@
  */
 
 #include "cdecl.h"
+#include <stdio.h>
+#define A 2471
+#define B 626
+#define C 5000
+#define D 333
 
-int PRE_CDECL asm_main( void ) POST_CDECL;
+int PRE_CDECL asm_main( int a, int b, int c, int d) POST_CDECL;
 
 int main()
 {
-    int ret_status;
-    ret_status = asm_main();
-    return ret_status;
+	int res = asm_main(A, B, C, D);
+	printf("%d\n",res);
+	return 0;
 }

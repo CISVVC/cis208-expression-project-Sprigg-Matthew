@@ -8,7 +8,7 @@
 #include "cdecl.h"
 #include <stdio.h>
 #define A 2471
-#define B 626000000
+#define B 626
 #define C 200
 #define D 333
 
